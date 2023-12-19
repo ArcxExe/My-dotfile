@@ -1,0 +1,77 @@
+export TERM='xterm-256color'
+
+source $HOME/.zsh/antigen.zsh
+
+
+antigen use oh-my-zsh
+antigen bundle git
+antigen bundle aliases
+antigen bundle sudorook/fishy-lite plugins/git
+antigen bundle sudorook/fishy-lite plugins/battery
+
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle zsh-users/zsh-history-substring-search
+antigen bundle zsh-users/zsh-completions
+antigen bundle MichaelAquilina/zsh-you-should-use
+antigen theme sudorook/fishy-lite themes/fishy
+
+antigen apply
+
+ex () {
+ if [ -f $1 ] ; then
+   case $1 in
+     *.tar.bz2) tar xvjf $1   ;;
+     *.tar.gz)  tar xvzf $1   ;;
+     *.tar.xz)  tar xvfJ $1   ;;
+     *.bz2)     bunzip2 $1    ;;
+     *.rar)     unrar x $1    ;;
+     *.gz)      gunzip $1     ;;
+     *.tar)     tar xvf $1    ;;
+     *.tbz2)    tar xvjf $1   ;;
+     *.tgz)     tar xvzf $1   ;;
+     *.zip)     unzip $1      ;;
+     *.Z)       uncompress $1 ;;
+     *.7z)      7z x $1       ;;
+     *)         echo "'$1' Не может быть распакован при помощи >ex<" ;;
+   esac
+ else
+   echo "'$1' не является допустимым файлом"
+ fi
+}
+
+bindkey -s "\e\e" "sudo !! \n"
+
+alias cat="bat" 
+alias install="sudo pacman -S"
+alias remove="sudo pacman -Rsnc"
+alias update="sudo pacman -Suy"
+alias search="sudo pacman -Ss"
+alias wifiu="nmtui"
+
+alias l="exa -lr --no-user --icons"
+alias ls="exa -l --no-user --icons"
+alias ld="exa -lD --no-user --icons"
+alias lt="exa --tree --no-user --git --icons"
+alias la="exa -la --no-user --git --icons"
+alias lg="exa -la --no-user --git --git-repos --icons "
+alias venv="python -m venv venv && source venv/bin/activate"
+alias activate="source venv/bin/activate"
+alias poweroff="shutdown -h now"
+alias wifi="nmcli device wifi connect Wive-NG-MT password 12121212" 
+alias cl="clear"
+alias hyber="sudo systemctl hibernate"
+alias sleep="systemctl suspend"
+alias epub="epr"
+alias del="rm -rf"
+alias Pomodoro="python ~/.local/bin/Pomodoro.py"
+alias pdf="mupdf"
+# Created by newuser for 5.9
+
+autoload -Uz compinit promptinit
+compinit
+
+promptinit
+
+
+

@@ -1,0 +1,119 @@
+env:
+  TERM: "xterm-256color"
+window:
+  opacity: 0.7
+  decorations: none
+scrolling:
+  history: 1000
+font:
+  size: 13
+  normal:
+    family: "JetbrainsMono Nerd Font"
+    style: "Bold"
+cursor:
+  style:
+    shape: Block
+    blinking: On
+  unfocused_hollow: false
+  blink_interval: 550
+live_config_reload: true
+colors:
+  name: FarSide
+  author: Baskerville
+  primary:
+    background: "#000000"
+    foreground: "#919191"
+  cursor:
+    text: "#000000"
+    cursor: "#919191"
+  normal:
+    black: "#303030"
+    red: "#a43261"
+    green: "#006ca5"
+    yellow: "#007086"
+    blue: "#6751a6"
+    magenta: "#913e88"
+    cyan: "#0061b1"
+    white: "#c6c6c6"
+  bright:
+    black: "#5e5e5e"
+    red: "#ff9fc9"
+    green: "#3bd6ff"
+    yellow: "#00ddf4"
+    blue: "#d5b8ff"
+    magenta: "#ffa7f6"
+    cyan: "#93c9ff"
+    white: "#ffffff"
+theme: Baskerville - FarSide
+
+# schemes:
+#   gruvbox_material_hard_dark: &gruvbox_material_hard_dark
+#     primary:
+#       background: '0x1d2021'
+#       foreground: '0xd4be98'
+#     normal:
+#       black:   '0x32302f'
+#       red:     '0xea6962'
+#       green:   '0xa9b665'
+#       yellow:  '0xd8a657'
+#       blue:    '0x7daea3'
+#       magenta: '0xd3869b'
+#       cyan:    '0x89b482'
+#       white:   '0xd4be98'
+#     bright:
+#       black:   '0x32302f'
+#       red:     '0xea6962'
+#       green:   '0xa9b665'
+#       yellow:  '0xd8a657'
+#       blue:    '0x7daea3'
+#       magenta: '0xd3869b'
+#       cyan:    '0x89b482'
+#       white:   '0xd4be98'
+#   gruvbox_material_medium_dark: &gruvbox_material_medium_dark
+#     primary:
+#       background: '0x282828'
+#       foreground: '0xd4be98'
+#     normal:
+#       black:   '0x3c3836'
+#       red:     '0xea6962'
+#       green:   '0xa9b665'
+#       yellow:  '0xd8a657'
+#       blue:    '0x7daea3'
+#       magenta: '0xd3869b'
+#       cyan:    '0x89b482'
+#       white:   '0xd4be98'
+#     bright:
+#       black:   '0x3c3836'
+#       red:     '0xea6962'
+#       green:   '0xa9b665'
+#       yellow:  '0xd8a657'
+#       blue:    '0x7daea3'
+#       magenta: '0xd3869b'
+#       cyan:    '0x89b482'
+#       white:   '0xd4be98'
+#   gruvbox_material_soft_dark: &gruvbox_material_soft_dark
+#     primary:
+#       background: '0x32302f'
+#       foreground: '0xd4be98'
+#     normal:
+#       black:   '0x45403d'
+#       red:     '0xea6962'
+#       green:   '0xa9b665'
+#       yellow:  '0xd8a657'
+#       blue:    '0x7daea3'
+#       magenta: '0xd3869b'
+#       cyan:    '0x89b482'
+#       white:   '0xd4be98'
+#     bright:
+#       black:   '0x45403d'
+#       red:     '0xea6962'
+#       green:   '0xa9b665'
+#       yellow:  '0xd8a657'
+#       blue:    '0x7daea3'
+#       magenta: '0xd3869b'
+#       cyan:    '0x89b482'
+#       white:   '0xd4be98'
+#   # Apply the color scheme.
+# colors: *gruvbox_material_hard_dark
+l_hard_dark
+ark
